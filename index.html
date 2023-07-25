@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porfolio</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Changa:wght@300&family=Cormorant+Garamond:wght@300&family=Crimson+Text:ital@0;1&family=Libre+Baskerville&family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/980bf5b5cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Projects</a></li> -->
+                    <!-- <li><a href="#portfolio">Porfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <img src="images/PHOTO3.jpg" class="logo">
+                <p>Tanishka Jain</p>
+                <h1>Hi, I'm <span>Tanishka</span><br>Jain and want to become a Software<br> Engineer.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- <------------------------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/PHOTO3.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="subtitl1">I am a 4th year student at Indore Institute of Science and Technology pursuing Bachelor of Technology in Computer Science and Engineering. I have a passion for all things related to technology and design, from software engineering to web Development.</p>
+                    <div class="tabtitles">
+                        <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tabcontents activetab" id="skills">
+                        <ul>
+                                <li>Programming Languages : Python |   Javascript | HTML | CSS | SQL</li>
+                                <li>Software Development</li>
+                                <li>Data Analysis</li>
+                                </ul></li>
+                            <!-- <li><span>Soft Skills </span><br><ul style="list-style-type: disc;">
+                                <li>Communication</li>
+                                <li>Time Management</li>
+                                <li>Self-Confidence</li>
+                                <li>Ability to Learn</li>
+                                </ul></li> -->
+                            <!-- <li><span>ui/ux</span><br>Designing web pages</li> -->
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>2020-Present</span><br>Bachelor of Technology in CSE</li>
+                            <li><span>2019</span><br>Class 12th - CBSE Board (77.8%)</li>
+                            <li><span>2017</span><br>Class 10th - CBSE Board (10 CGPA)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----projects------ -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="projectlist">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus eveniet accusantium veritatis aut fugit, molestias quisquam voluptate doloremque, debitis dolor facere ea ad, iste exercitationem nisi laborum hic et!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-light fa-vial-virus"></i>
+                    <h2>to do list</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus eveniet accusantium veritatis aut fugit, molestias quisquam voluptate doloremque, debitis dolor facere ea ad, iste exercitationem nisi laborum hic et!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-tents"></i>
+                    <h2>quiz game</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus eveniet accusantium veritatis aut fugit, molestias quisquam voluptate doloremque, debitis dolor facere ea ad, iste exercitationem nisi laborum hic et!</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- ----------------------------------------- -->
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My-Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>down load from play store Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>music app</h3>
+                        <p>down load from play store Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>reading app</h3>
+                        <p>down load from play store Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div> -->
+    <!-- ---------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>tanijain1501@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9079514558</p>
+                    <div class="socialions">
+                        <a href="http://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/tanishka-jain-918387203/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume Templates for Freshers (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contactright">
+                    <form name = "submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id ="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Tanishka.</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tablinks");
+        var tabcontents = document.getElementsByClassName("tabcontents");
+        function opentab(tab){
+            for( tablink of tablinks){
+                tablink.classList.remove("activelink");
+            }
+            for( tabcontent of tabcontents){
+                tabcontent.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tab).classList.add("activetab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzDvRccpRjMwPosTnagRmDEucYToGEipFMGljJjydgBIa6pkt2JmTzHf4koUzl7N3we/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },1000) // 5000ms
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
