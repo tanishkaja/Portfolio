@@ -14,7 +14,8 @@ body{
 }
 #header{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 630px;
     background-color: #c5bdbd;
     /* background-image: url(images/background.png) ; d5c4a9*/
     background-size: cover;
@@ -69,13 +70,13 @@ nav ul li a:hover::after{
     margin-left: 35px; 
 }
 .header-text p{
-    margin-top: -200px;
+    margin-top: -280px;
     font-size: 55px;
     font-family: 'Crimson Text', serif;
     color: #c4627a;
 }
 .header-text h1{
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Changa', serif;
     margin-top: 18px;
 }
@@ -324,7 +325,7 @@ form input, form textarea{
     padding: 15px;
     margin: 15px 0;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 6px;
 }
 form .btn2{
@@ -349,6 +350,9 @@ nav{
     justify-content: space-between;
 }
 @media only screen and (max-width:1200px){
+    .header-text {
+        margin-top: 90px;
+    }
     nav ul li a{
         margin-left: 50px;
         margin-right: 10px;
@@ -365,6 +369,9 @@ nav{
     }
 }
 @media only screen and (max-width:800px){
+    nav ul li {
+        font-size: 60px;
+    }
     .logo{
         width: 160px;
         /* margin-left: 420px;
@@ -376,6 +383,7 @@ nav{
         /* margin-top: 80px;
         margin-left: -20px; */
         margin-left: 15px;
+        margin-top: 40px;
     }
     .header-text p{
         font-size: 28px;
@@ -387,15 +395,15 @@ nav{
 }
 @media only screen and (max-width:750px){
     .logo{
-        width: 150px;
+        width: 130px;
          margin-left: 400px;
         /*margin-top: 75px; */
         margin-top: 120px;
     }
     .header-text{
         font-size: 25px;
-        /* margin-top: 90px;
-        margin-left: -20px; */
+        /* margin-top: 90px;*/
+        margin-left: -20px; 
     }
     .header-text p{
         font-size: 28px;
@@ -506,3 +514,4 @@ nav{
     margin-top:-40px ;
     display: block;
 }
+
